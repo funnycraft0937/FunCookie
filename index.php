@@ -22,7 +22,7 @@
         
         // 输出网页内容
         $content = file_get_contents($url);
-        echo $content;
+        echo '<script>alert("' . addslashes($content) . '");</script>';
     }
     ?>
 </body>
